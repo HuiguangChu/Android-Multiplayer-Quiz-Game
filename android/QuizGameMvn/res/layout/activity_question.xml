@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".QuestionActivity" >
+
+    <TextView android:id="@+id/timer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" />
+    
+    <TextView android:id="@+id/question_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum?" />
+    
+    <View android:id="@+id/anchor"
+        android:layout_width="10dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true" />
+    
+    <Button android:id="@+id/alternative4_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/anchor"
+        android:layout_marginBottom="20dp" />
+    
+    <Button android:id="@+id/alternative3_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/anchor"
+        android:layout_marginBottom="20dp" />
+    
+    <Button android:id="@+id/alternative2_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/alternative4_button"
+        android:layout_toRightOf="@id/anchor"
+        android:layout_marginBottom="20dp" />
+    
+    <Button android:id="@+id/alternative1_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/alternative3_button"
+        android:layout_toLeftOf="@id/anchor"
+        android:layout_marginBottom="20dp" />
+    
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".EditProfileActivity" >
+    
+    
+    <EditText android:id="@+id/username_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/new_username" />
+    
+    <EditText android:id="@+id/oldpass_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_edit"
+        android:inputType="textPassword"
+        android:hint="@string/old_password" />
+    
+    <EditText android:id="@+id/newpass_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/oldpass_edit"
+        android:inputType="textPassword"
+        android:hint="@string/new_password" />
+    
+    <EditText android:id="@+id/confirm_newpass_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newpass_edit"
+        android:inputType="textPassword"
+        android:hint="@string/confirm_new_password" />
+
+    <EditText android:id="@+id/email_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirm_newpass_edit"
+        android:inputType="textEmailAddress"
+        android:hint="@string/new_email" />
+    
+    <Button android:id="@+id/save_profile_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_edit"
+        android:text="@string/save_profile" />
+    
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QuizGame</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_screen_title">Quiz Game</string>
+    <string name="new_game">Start New Game</string>
+    <string name="existing_game">Game in Progress</string>
+    <string name="options">Options</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="title_activity_new_game">New Game</string>
+    <string name="number_of_players">Number of Players</string>
+    <string name="create_group">Create Group</string>
+    <string name="game_mode">Game Mode</string>
+    <string name="difficulty">Difficulty</string>
+    <string name="number_of_turns">Number of turns</string>
+    <string name="create_game">Create Game</string>
+    <string name="choose_category">Choose a Category</string>
+    <string name="new_categories">New random categories</string>
+    <string name="next">Next</string>
+
+    <string-array name="players_array">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="game_mode_array">
+        <item>Turns</item>
+        <item>Random</item>
+    </string-array>
+    <string-array name="difficulty_array">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+
+    <string name="title_activity_category">Category Activity</string>
+    <string name="title_activity_options">Options Activity</string>
+    <string name="sound">Sound</string>
+    <string name="vibration">Vibration</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="reset_profile">Reset Profile</string>
+    <string name="OK">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_question">Question</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_new_user">NewUserActivity</string>
+    <string name="title_activity_retrieve_password">RetrievePasswordActivity</string>
+    <string name="user_name">User Name: </string>
+    <string name="username">Username</string>
+    <string name="password">Password: </string>
+    <string name="remember_password">Remember password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="new_user">New User</string>
+    <string name="confirm_password">Confirm Password: </string>
+    <string name="email">Email: </string>
+    <string name="create">Create</string>
+    <string name="password_to_email">The password will be sent to your email</string>
+    <string name="send">Send</string>
+    <string name="title_activity_create_group">CreateGroupActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="search">Search</string>
+    <string name="friends">Friends</string>
+    <string name="friend">Friend</string>
+    <string name="invited">Invited</string>
+    <string name="invite">Invite</string>
+    <string name="x"> X </string>
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="gcm_message">You have an invitation</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="title_activity_edit_profile">EditProfileActivity</string>
+    <string name="new_username">New Username</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="old_password">Old password</string>
+    <string name="new_email">New Email</string>
+    <string name="save_profile">Save Profile</string>
+    <string name="title_activity_stat">StatActivity</string>
+
+</resources>

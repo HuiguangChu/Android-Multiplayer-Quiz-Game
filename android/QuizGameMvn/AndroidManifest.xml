@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="no.hig.gsd.quizgame"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+    <!-- GCM connects to Google Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="no.hig.gsd.quizgame.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="no.hig.gsd.quizgame.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="no.hig.gsd.quizgame.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="no.hig.gsd.quizgame.TitleScreenActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="no.hig.gsd.quizgame.NewGameActivity"
+            android:label="@string/title_activity_new_game"
+            android:parentActivityName="no.hig.gsd.quizgame.TitleScreenActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="no.hig.imt4112.quizgame.MainScreenActivity" />
+        </activity>
+        <activity
+            android:name="no.hig.gsd.quizgame.CategoryActivity"
+            android:label="@string/title_activity_category" >
+        </activity>
+        <activity
+            android:name="no.hig.gsd.quizgame.OptionsActivity"
+            android:label="@string/title_activity_options" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="no.hig.gsd.quizgame.TitleScreenActivity" />
+        </activity>
+        <activity
+            android:name="no.hig.gsd.quizgame.QuestionActivity"
+            android:label="@string/title_activity_question" >
+        </activity>
+        <activity
+            android:name="no.hig.gsd.quizgame.NewUserActivity"
+            android:label="@string/title_activity_new_user"
+            android:parentActivityName="no.hig.gsd.quizgame.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="no.hig.gsd.quizgame.LoginActivity" />
+        </activity>
+        <activity
+            android:name="no.hig.gsd.quizgame.RetrievePasswordActivity"
+            android:label="@string/title_activity_retrieve_password"
+            android:parentActivityName="no.hig.gsd.quizgame.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="no.hig.gsd.quizgame.LoginActivity" />
+        </activity>
+        <activity
+            android:name="no.hig.gsd.quizgame.CreateGroupActivity"
+            android:label="@string/title_activity_create_group"
+            android:parentActivityName="no.hig.gsd.quizgame.NewGameActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="no.hig.gsd.quizgame.NewGameActivity" />
+        </activity>
+
+        <!--
+          BroadcastReceiver that will receive intents from GCM
+          services and handle them to the custom IntentService.
+
+          The com.google.android.c2dm.permission.SEND permission is necessary
+          so only GCM services can send data messages for the app.
+        -->
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="no.hig.gsd.quizgame" />
+            </intent-filter>
+        </receiver>
+
+        <!--
+          Application-specific subclass of GCMBaseIntentService that will
+          handle received messages.
+
+          By default, it must be named .GCMIntentService, unless the
+          application uses a custom BroadcastReceiver that redefines its name.
+        -->
+        <service android:name="no.hig.gsd.quizgame.GCMIntentService" />
+
+        <activity
+            android:name="no.hig.gsd.quizgame.EditProfileActivity"
+            android:label="@string/title_activity_edit_profile" >
+        </activity>
+        <activity
+            android:name="no.hig.gsd.quizgame.StatActivity"
+            android:label="@string/title_activity_stat" >
+        </activity>
+    </application>
+
+</manifest>

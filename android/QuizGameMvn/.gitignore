@@ -1,0 +1,14 @@
+# Built application files
+*.apk
+*.ap_
+
+# VM files
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+/target

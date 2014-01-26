@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+    <TextView android:id="@+id/username_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="16sp" />
+    
+    <Button android:id="@+id/unfriend_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:minHeight="0dp"
+		android:minWidth="0dp"
+		android:text="@string/x"
+		android:textSize="12sp" />
+    
+    <Button android:id="@+id/invite_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+		android:minWidth="0dp"
+        android:text="@string/invite"
+        android:textSize="12sp" />
+    
+</LinearLayout>
